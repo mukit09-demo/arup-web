@@ -58,7 +58,7 @@ export const projects: Project[] = [
     serviceSlugs: ["acoustics", "structural-engineering", "fire-engineering"],
     summary: "Revitalising an iconic venue without altering the silhouette that defines it.",
     description:
-      "Arup engineered the original building in the 1960s, and returned to renew the Concert Hall's acoustics, accessibility and stage machinery. Every intervention had to fit within an unchanged heritage shell, which meant new reflectors, a raised stage and a full theatre-systems replacement were installed through existing openings.",
+      "SDRS engineered the original building in the 1960s, and returned to renew the Concert Hall's acoustics, accessibility and stage machinery. Every intervention had to fit within an unchanged heritage shell, which meant new reflectors, a raised stage and a full theatre-systems replacement were installed through existing openings.",
     image: { alt: "A concert hall interior with timber acoustic reflectors", seed: "project-soh" },
     stats: [
       { value: "1.1", unit: "s", label: "Mid-frequency reverberation time achieved" },

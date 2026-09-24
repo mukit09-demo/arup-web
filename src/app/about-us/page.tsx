@@ -16,7 +16,7 @@ import { content } from "@/lib/content";
 export const metadata: Metadata = {
   title: "About us",
   description:
-    "Arup is owned in trust on behalf of its members. Our history, values, leadership and the commitments that shape our work.",
+    "SDRS is owned in trust on behalf of its members. Our history, values, leadership and the commitments that shape our work.",
 };
 
 export default async function AboutPage() {

@@ -13,7 +13,7 @@ export const contactContent: ContactContent = {
       region: "Europe",
       addressLines: ["8 Fitzroy Street", "London W1T 4BJ"],
       phone: "+44 20 7636 1531",
-      email: "london@example-arup.com",
+      email: "london@example-sdrs.com",
       isHeadquarters: true,
     },
     {
@@ -23,7 +23,7 @@ export const contactContent: ContactContent = {
       region: "Americas",
       addressLines: ["77 Water Street, 30th Floor", "New York, NY 10005"],
       phone: "+1 212 896 3000",
-      email: "newyork@example-arup.com",
+      email: "newyork@example-sdrs.com",
       isHeadquarters: true,
     },
     {
@@ -33,7 +33,7 @@ export const contactContent: ContactContent = {
       region: "East Asia",
       addressLines: ["Level 5, Festival Walk", "80 Tat Chee Avenue, Kowloon Tong"],
       phone: "+852 2528 3031",
-      email: "hongkong@example-arup.com",
+      email: "hongkong@example-sdrs.com",
       isHeadquarters: true,
     },
     {
@@ -43,7 +43,7 @@ export const contactContent: ContactContent = {
       region: "Australasia",
       addressLines: ["Barrack Place, Level 5", "151 Clarence Street, NSW 2000"],
       phone: "+61 2 9320 9320",
-      email: "sydney@example-arup.com",
+      email: "sydney@example-sdrs.com",
       isHeadquarters: true,
     },
     {
@@ -53,7 +53,7 @@ export const contactContent: ContactContent = {
       region: "Middle East and Africa",
       addressLines: ["Emaar Square, Building 1, Level 5", "Downtown Dubai"],
       phone: "+971 4 305 6600",
-      email: "dubai@example-arup.com",
+      email: "dubai@example-sdrs.com",
       isHeadquarters: true,
     },
     {
@@ -63,7 +63,7 @@ export const contactContent: ContactContent = {
       region: "Europe",
       addressLines: ["Naritaweg 118", "1043 CA Amsterdam"],
       phone: "+31 20 305 8500",
-      email: "amsterdam@example-arup.com",
+      email: "amsterdam@example-sdrs.com",
     },
     {
       id: "office-berlin",
@@ -72,7 +72,7 @@ export const contactContent: ContactContent = {
       region: "Europe",
       addressLines: ["Joachimsthaler Straße 41", "10623 Berlin"],
       phone: "+49 30 885 9130",
-      email: "berlin@example-arup.com",
+      email: "berlin@example-sdrs.com",
     },
     {
       id: "office-madrid",
@@ -81,7 +81,7 @@ export const contactContent: ContactContent = {
       region: "Europe",
       addressLines: ["Calle Alcalá 54", "28014 Madrid"],
       phone: "+34 91 523 9276",
-      email: "madrid@example-arup.com",
+      email: "madrid@example-sdrs.com",
     },
     {
       id: "office-singapore",
@@ -90,7 +90,7 @@ export const contactContent: ContactContent = {
       region: "East Asia",
       addressLines: ["182 Cecil Street, Level 20", "Frasers Tower, 069547"],
       phone: "+65 6411 2500",
-      email: "singapore@example-arup.com",
+      email: "singapore@example-sdrs.com",
     },
     {
       id: "office-toronto",
@@ -99,7 +99,7 @@ export const contactContent: ContactContent = {
       region: "Americas",
       addressLines: ["121 Bloor Street East, Suite 900", "Toronto, ON M4W 3M5"],
       phone: "+1 416 515 0915",
-      email: "toronto@example-arup.com",
+      email: "toronto@example-sdrs.com",
     },
     {
       id: "office-sao-paulo",
@@ -108,7 +108,7 @@ export const contactContent: ContactContent = {
       region: "Americas",
       addressLines: ["Avenida Paulista 1842", "Bela Vista, 01310-200"],
       phone: "+55 11 3078 4444",
-      email: "saopaulo@example-arup.com",
+      email: "saopaulo@example-sdrs.com",
     },
     {
       id: "office-nairobi",
@@ -117,7 +117,7 @@ export const contactContent: ContactContent = {
       region: "Middle East and Africa",
       addressLines: ["The Address, Muthangari Drive", "Westlands, Nairobi"],
       phone: "+254 20 271 0000",
-      email: "nairobi@example-arup.com",
+      email: "nairobi@example-sdrs.com",
     },
     {
       id: "office-melbourne",
@@ -126,7 +126,7 @@ export const contactContent: ContactContent = {
       region: "Australasia",
       addressLines: ["Level 17, 1 Nicholson Street", "East Melbourne, VIC 3002"],
       phone: "+61 3 9668 5500",
-      email: "melbourne@example-arup.com",
+      email: "melbourne@example-sdrs.com",
     },
     {
       id: "office-auckland",
@@ -135,7 +135,7 @@ export const contactContent: ContactContent = {
       region: "Australasia",
       addressLines: ["Level 8, 44 Khyber Pass Road", "Grafton, Auckland 1023"],
       phone: "+64 9 359 9200",
-      email: "auckland@example-arup.com",
+      email: "auckland@example-sdrs.com",
     },
   ],
 

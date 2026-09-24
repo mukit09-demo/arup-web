@@ -8,16 +8,16 @@ export const aboutContent: AboutContent = {
   stats: [
     { value: "18,000", unit: "+", label: "Members across the collective" },
     { value: "34", label: "Countries with permanent offices" },
-    { value: "1946", label: "Founded in London by Ove Arup" },
+    { value: "1946", label: "Founded in London by Shawkat" },
     { value: "100", unit: "%", label: "Owned in trust for our people" },
   ],
 
   milestones: [
     {
       year: "1946",
-      title: "Ove Arup & Partners is founded",
+      title: "Shawkat Design and Research Studio is founded",
       description:
-        "Ove Arup sets up the practice in London around a conviction that engineering and design should not be separate disciplines with separate contracts.",
+        "Shawkat sets up the practice in London around a conviction that engineering and design should not be separate disciplines with separate contracts.",
     },
     {
       year: "1957",
@@ -29,7 +29,7 @@ export const aboutContent: AboutContent = {
       year: "1970",
       title: "The Key Speech",
       description:
-        "Ove Arup sets out the aims and organisation of the firm in Winchester. It remains the reference point for how the collective is expected to behave.",
+        "Shawkat sets out the aims and organisation of the firm in Winchester. It remains the reference point for how the collective is expected to behave.",
     },
     {
       year: "1977",
@@ -143,10 +143,10 @@ export const aboutContent: AboutContent = {
       href: "/contact-us",
     },
     {
-      title: "Arup University",
+      title: "SDRS University",
       description:
         "Our internal research and learning function, which also works openly with clients and academic partners to raise standards across the industry.",
-      ctaLabel: "Discover Arup University",
+      ctaLabel: "Discover SDRS University",
       href: "/careers",
     },
     {
@@ -157,7 +157,7 @@ export const aboutContent: AboutContent = {
       href: "/news",
     },
     {
-      title: "Arup Alumni",
+      title: "SDRS Alumni",
       description:
         "A standing network for former members of the collective, because people leave and come back, and the relationship outlasts the employment.",
       ctaLabel: "Register your interest",
@@ -184,13 +184,13 @@ export const aboutContent: AboutContent = {
     {
       title: "Humane and friendly",
       description:
-        "Ove Arup's phrase, and still the test. A large, efficient organisation where individual happiness is treated as everyone's concern.",
+        "Shawkat's phrase, and still the test. A large, efficient organisation where individual happiness is treated as everyone's concern.",
     },
   ],
 
   founderQuote: {
     quote:
       "We want an organisation which is humane and friendly in spite of being large and efficient, where every member is treated not only as a link in a chain of command, but as a human being whose happiness is the concern of all.",
-    attribution: "Sir Ove Arup, The Key Speech, 1970",
+    attribution: "Shawkat, The Key Speech, 1970",
   },
 };

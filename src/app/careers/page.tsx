@@ -14,7 +14,7 @@ import { content } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Careers",
   description:
-    "Every day, a new challenge. Graduate and experienced roles across engineering, advisory, planning and digital at Arup.",
+    "Every day, a new challenge. Graduate and experienced roles across engineering, advisory, planning and digital at SDRS.",
 };
 
 export default async function CareersPage() {
@@ -42,7 +42,7 @@ export default async function CareersPage() {
         <SectionHeader
           eyebrow="Life here"
           title="What you get from being a member"
-          description="Everyone who works at Arup shares in its ownership — and in the decisions and profits that come with it."
+          description="Everyone who works at SDRS shares in its ownership — and in the decisions and profits that come with it."
         />
         <ul className="mt-14 grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {careers.benefits.map((benefit, index) => (

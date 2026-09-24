@@ -1,7 +1,11 @@
-# arup-web
+# sdrs-web
 
-Front end for an Arup-style corporate site, built with Next.js 16 (App Router),
-React 19, TypeScript and Tailwind CSS v4.
+Front end for SDRS — Shawkat Design and Research Studio — built with Next.js 16
+(App Router), React 19, TypeScript and Tailwind CSS v4.
+
+Brand assets live in `public/`: `sdrs-logo.png` is the full badge (used for the
+app icons and the Open Graph card), `sdrs-wordmark.png` is the logotype rendered
+by `<Logo>` in the header.
 
 It ships with a complete set of dummy content so every page renders immediately,
 and a content layer designed to be repointed at a Spring Boot backend by

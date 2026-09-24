@@ -10,12 +10,15 @@ export interface NavLink {
 }
 
 export const siteConfig = {
-  name: "Arup",
+  name: "SDRS",
+  /** Full legal name — used where the initials alone would be ambiguous. */
+  legalName: "Shawkat Design and Research Studio",
   /** Used by the footer strapline and as the metadata description fallback. */
   tagline:
-    "We guide, plan and design the future of the built environment. A global " +
-    "collective of designers, engineers and consultants, shaping a better world.",
+    "Shawkat Design and Research Studio is an engineering design, research and " +
+    "sustainability practice, working across every stage of the built environment.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  /** Placeholder, inherited with the sample history in `src/data/about.ts`. */
   foundedYear: 1946,
 } as const;
 

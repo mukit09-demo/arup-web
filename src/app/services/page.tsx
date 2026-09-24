@@ -13,7 +13,7 @@ import { digitalToolToCard, serviceToCard } from "@/lib/content/mappers";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Design and engineering, advisory, planning and digital services from Arup.",
+    "Design and engineering, advisory, planning and digital services from SDRS.",
 };
 
 export default async function ServicesPage() {

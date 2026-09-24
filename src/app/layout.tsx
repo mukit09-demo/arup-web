@@ -23,18 +23,19 @@ const interTight = Inter_Tight({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} — shaping a better world`,
-    // Page-level titles become "Projects | Arup".
+    default: `${siteConfig.name} — ${siteConfig.legalName}`,
+    // Page-level titles become "Projects | SDRS".
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.tagline,
   openGraph: {
     type: "website",
     siteName: siteConfig.name,
-    title: `${siteConfig.name} — shaping a better world`,
+    title: `${siteConfig.name} — ${siteConfig.legalName}`,
     description: siteConfig.tagline,
     url: siteConfig.url,
   },
+  // Image comes from `src/app/opengraph-image.png` via the file convention.
   twitter: { card: "summary_large_image" },
 };
 

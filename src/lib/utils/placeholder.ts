@@ -10,7 +10,7 @@
 const GRADIENTS = [
   "linear-gradient(135deg, #0f2d3d 0%, #1d5f70 55%, #4aa39b 100%)",
   "linear-gradient(135deg, #2a1b3d 0%, #44318d 55%, #8265a7 100%)",
-  "linear-gradient(135deg, #3a1219 0%, #a30d1f 60%, #e3122a 100%)",
+  "linear-gradient(135deg, #3a1214 0%, #a10b0b 60%, #e40303 100%)",
   "linear-gradient(135deg, #10212f 0%, #2d4a6b 55%, #7ea8c4 100%)",
   "linear-gradient(135deg, #1c2b16 0%, #3f6212 55%, #8bad4f 100%)",
   "linear-gradient(135deg, #2e1f0b 0%, #855c1b 55%, #d9a441 100%)",

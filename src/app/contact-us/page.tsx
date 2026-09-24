@@ -11,7 +11,7 @@ import { content } from "@/lib/content";
 export const metadata: Metadata = {
   title: "Contact us",
   description:
-    "Send an enquiry to Arup, or find contact details for our offices across Europe, the Americas, Asia, Australasia, the Middle East and Africa.",
+    "Send an enquiry to SDRS, or find contact details for our offices across Europe, the Americas, Asia, Australasia, the Middle East and Africa.",
 };
 
 export default async function ContactPage() {

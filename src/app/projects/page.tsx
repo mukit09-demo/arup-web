@@ -11,7 +11,7 @@ import { projectToCard } from "@/lib/content/mappers";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Selected Arup projects across transport, energy, water, property, cities and culture.",
+    "Selected SDRS projects across transport, energy, water, property, cities and culture.",
 };
 
 export default async function ProjectsPage() {

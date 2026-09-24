@@ -13,7 +13,7 @@ import { articleToCard, issueToCard } from "@/lib/content/mappers";
 export const metadata: Metadata = {
   title: "News",
   description:
-    "Press releases, insight, awards and reports from across Arup's global practice.",
+    "Press releases, insight, awards and reports from across the SDRS practice.",
 };
 
 export default async function NewsPage() {

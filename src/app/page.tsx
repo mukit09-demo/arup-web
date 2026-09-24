@@ -31,7 +31,7 @@ export default async function HomePage() {
       <PageHero
         title="We shape a better world"
         eyebrow="Designers, engineers and consultants"
-        intro="Arup is an independent firm of designers, engineers, architects, planners, consultants and technical specialists, working across every aspect of today's built environment."
+        intro="SDRS is an independent studio of designers, engineers, architects, planners, consultants and technical specialists, working across every aspect of today's built environment."
         image={{
           alt: "Long-span bridge deck at dusk",
           seed: "home-hero",

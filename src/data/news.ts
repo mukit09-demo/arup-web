@@ -127,12 +127,12 @@ export const articles: Article[] = [
     tags: ["energy", "advisory"],
   },
   {
-    slug: "arup-journal-2026-issue-one",
-    title: "The Arup Journal 2026, Issue 1 is out now",
+    slug: "sdrs-journal-2026-issue-one",
+    title: "The SDRS Journal 2026, Issue 1 is out now",
     excerpt:
       "Sixty years of technical publishing continues with a bascule bridge in the UK, new wharves in Sydney and Kai Tak Sports Park in Hong Kong.",
     body: [
-      "The Arup Journal has been publishing detailed technical accounts of our work for sixty years. Issue 1 of 2026 covers three projects in depth.",
+      "The SDRS Journal has been publishing detailed technical accounts of our work for sixty years. Issue 1 of 2026 covers three projects in depth.",
       "A bascule bridge in the UK, where the counterweight arrangement had to fit within an existing abutment. New wharves in an environmentally sensitive part of Sydney Harbour, built with minimal seabed disturbance. And Kai Tak Sports Park, covering the retractable roof and district cooling integration.",
       "The Journal exists to publish the parts that do not make it into project summaries: what was tried and abandoned, and why the final solution looks the way it does.",
       "The full archive going back to 1966 remains freely available.",
@@ -140,7 +140,7 @@ export const articles: Article[] = [
     category: "Press release",
     publishedAt: "2026-04-30",
     readingMinutes: 2,
-    author: { name: "Editorial team", role: "The Arup Journal" },
+    author: { name: "Editorial team", role: "The SDRS Journal" },
     image: { alt: "A printed technical journal on a desk", seed: "news-journal" },
     tags: ["publication"],
   },

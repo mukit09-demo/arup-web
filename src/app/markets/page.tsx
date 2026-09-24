@@ -10,7 +10,7 @@ import { marketToCard } from "@/lib/content/mappers";
 export const metadata: Metadata = {
   title: "Markets",
   description:
-    "The sectors Arup works across — transport, energy, water, property, cities, health, education and more.",
+    "The sectors SDRS works across — transport, energy, water, property, cities, health, education and more.",
 };
 
 export default async function MarketsPage() {

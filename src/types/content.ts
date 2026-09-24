@@ -115,7 +115,7 @@ export interface Article {
   tags: string[];
 }
 
-/** A "big question" teaser — Arup calls these Issues. */
+/** A "big question" teaser — SDRS calls these Issues. */
 export interface Issue {
   slug: Slug;
   question: string;
