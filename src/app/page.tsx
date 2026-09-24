@@ -1,69 +1,113 @@
-import Image from "next/image";
+import { CardGrid } from "@/components/sections/CardGrid";
+import { CtaBand } from "@/components/sections/CtaBand";
+import { Section } from "@/components/sections/Section";
+import { SectionHeader } from "@/components/sections/SectionHeader";
+import { PageHero } from "@/components/sections/PageHero";
+import { StatList } from "@/components/ui/StatList";
+import { content } from "@/lib/content";
+import {
+  articleToCard,
+  issueToCard,
+  marketToCard,
+  projectToCard,
+} from "@/lib/content/mappers";
+import { routes } from "@/lib/config/routes";
 
-export default function Home() {
+/**
+ * Home page. Everything comes from the content repository, so this renders the
+ * same whether the data is bundled dummy content or the Spring Boot API.
+ */
+export default async function HomePage() {
+  const [markets, projects, articles, issues, about] = await Promise.all([
+    content.listMarkets(),
+    content.listProjects({ limit: 6 }),
+    content.listArticles({ limit: 3 }),
+    content.listIssues(3),
+    content.getAboutContent(),
+  ]);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <PageHero
+        title="We shape a better world"
+        eyebrow="Designers, engineers and consultants"
+        intro="Arup is an independent firm of designers, engineers, architects, planners, consultants and technical specialists, working across every aspect of today's built environment."
+        image={{
+          alt: "Long-span bridge deck at dusk",
+          seed: "home-hero",
+        }}
+        actions={[
+          { label: "Explore our projects", href: routes.projects },
+          { label: "What we do", href: routes.services },
+        ]}
+      />
+
+      <Section tone="muted" spacing="sm">
+        <StatList stats={about.stats} columns={4} />
+      </Section>
+
+      <Section>
+        <SectionHeader
+          eyebrow="Markets"
+          title="The sectors we work across"
+          description="From transport networks to data centres, our teams bring together every discipline a place needs."
+          action={{ label: "All markets", href: routes.markets }}
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+        <div className="mt-14">
+          <CardGrid
+            items={markets.slice(0, 6).map(marketToCard)}
+            columns={3}
+            priorityCount={3}
+          />
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </Section>
+
+      <Section tone="dark">
+        <SectionHeader
+          eyebrow="Projects"
+          title="Work delivered with our clients"
+          description="A selection of the places, systems and structures our teams have helped bring into being."
+          action={{ label: "All projects", href: routes.projects }}
+          tone="dark"
+        />
+        <div className="mt-14">
+          <CardGrid
+            items={projects.map(projectToCard)}
+            columns={3}
+            variant="overlay"
+            leadFeature
+          />
         </div>
-      </main>
-    </div>
+      </Section>
+
+      <Section>
+        <SectionHeader
+          eyebrow="Big questions"
+          title="The issues shaping our work"
+          description="Open problems we are investigating with clients, universities and city authorities."
+        />
+        <div className="mt-14">
+          <CardGrid items={issues.map(issueToCard)} columns={3} />
+        </div>
+      </Section>
+
+      <Section tone="muted">
+        <SectionHeader
+          eyebrow="News and insight"
+          title="Latest from the firm"
+          action={{ label: "All news", href: routes.news }}
+        />
+        <div className="mt-14">
+          <CardGrid items={articles.map(articleToCard)} columns={3} />
+        </div>
+      </Section>
+
+      <CtaBand
+        title="Tell us what you are trying to change."
+        description="Whether it is a single building or a national programme, our teams will help you frame the problem before designing the answer."
+        primaryAction={{ label: "Contact us", href: routes.contact }}
+        image={{ alt: "Engineers reviewing drawings on site", seed: "home-cta" }}
+      />
+    </>
   );
 }
