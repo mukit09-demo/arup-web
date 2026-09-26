@@ -62,7 +62,9 @@ export function PageHero({
       <Container
         className={cn(
           "relative",
-          size === "full" ? "pt-32 pb-20 md:pt-44 md:pb-28" : "pt-28 pb-14 md:pt-36 md:pb-20",
+          // Top padding clears the sticky header (h-20, lg:h-26) as well as
+          // setting the band's own rhythm.
+          size === "full" ? "pt-36 pb-20 md:pt-52 md:pb-28" : "pt-32 pb-14 md:pt-44 md:pb-20",
         )}
       >
         {crumbs && <Breadcrumbs crumbs={crumbs} tone={hasImage ? "dark" : "light"} />}

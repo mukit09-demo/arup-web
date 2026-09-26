@@ -24,14 +24,16 @@ export function SiteHeader() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-ink-200 bg-white/90 backdrop-blur-md">
-      <Container className="flex h-18 items-center justify-between gap-8">
+      <Container className="flex h-20 items-center justify-between gap-4 lg:h-26 xl:gap-8">
         <Logo />
 
-        <nav aria-label="Main" className="hidden items-center gap-8 lg:flex">
+        {/* Tighter gaps between lg and xl: at 1024px the full row only just
+            fits, and the labels must not wrap. */}
+        <nav aria-label="Main" className="hidden items-center gap-5 lg:flex xl:gap-8">
           {primaryNav.map((link) => (
             <NavItem key={link.href} link={link} pathname={pathname} emphasis />
           ))}
-          <span aria-hidden="true" className="h-5 w-px bg-ink-200" />
+          <span aria-hidden="true" className="h-6 w-px bg-ink-200" />
           {secondaryNav
             .filter((link) => link.href !== routes.contact)
             .map((link) => (
@@ -40,7 +42,11 @@ export function SiteHeader() {
         </nav>
 
         <div className="flex items-center gap-3">
-          <Button href={routes.contact} size="sm" className="hidden sm:inline-flex">
+          <Button
+            href={routes.contact}
+            size="sm"
+            className="hidden whitespace-nowrap sm:inline-flex"
+          >
             Contact us
           </Button>
           <button
@@ -82,7 +88,7 @@ export function SiteHeader() {
                     isActive ? "text-brand-600" : "text-ink-900",
                   )}
                 >
-                  <span className="font-display text-lg font-medium">{link.label}</span>
+                  <span className="font-display text-xl font-medium">{link.label}</span>
                   {link.description && (
                     <span className="mt-1 block text-sm text-ink-500">
                       {link.description}
@@ -114,8 +120,9 @@ function NavItem({
       href={link.href}
       aria-current={isActive ? "page" : undefined}
       className={cn(
-        "relative py-1 transition-colors",
-        emphasis ? "text-sm font-medium" : "text-sm",
+        "relative py-1 whitespace-nowrap transition-colors",
+        // Primary sections read a step larger than the supporting row.
+        emphasis ? "text-lg font-medium" : "text-base",
         isActive ? "text-brand-600" : "text-ink-700 hover:text-ink-950",
       )}
     >
